@@ -1,8 +1,8 @@
 import spacy
 
 # Load SpaCy's English model
-nlp = spacy.load('en_core_web_trf')
-
+#nlp = spacy.load('en_core_web_trf')
+nlp = spacy.load('en_core_web_md')
 
 def extract_entities(text):
 
@@ -18,4 +18,5 @@ def extract_entities(text):
 
     return entities
 
-extract_entities("Brazil's legal betting and Elon Musk market surges with 1.7 billion hits on bet.br domain, overtake YouTube and Instagram in online traffic")
+ent = extract_entities("Brazil's legal betting and Elon Musk market surges with 1.7 billion hits on bet.br domain, overtake YouTube and Instagram in online traffic")
+print(ent)
