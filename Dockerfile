@@ -26,7 +26,7 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Switch back to the Selenium user for security
-USER seluser
+#USER seluser
 
 # Set a default port
 ENV PORT=8080
