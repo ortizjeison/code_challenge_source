@@ -26,7 +26,8 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Install SpaCy large model (en_core_web_trf)
-RUN pip install spacy && python -m spacy download en_core_web_trf
+#RUN pip install spacy && python -m spacy download en_core_web_trf
+RUN pip install spacy && python -m spacy download en_core_web_md
 
 # Set a default port
 ENV PORT=8080
