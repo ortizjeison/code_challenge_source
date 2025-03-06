@@ -4,9 +4,18 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
+
+local = True
+
 def fetch_html():
     # Set up Chrome options
     chrome_options = Options()
+
+    if local:
+        pass
+    else:
+        chrome_options.binary_location = "/opt/google/chrome/chrome" # specify the path to the Chrome binary
+    
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
