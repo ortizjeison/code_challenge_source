@@ -25,8 +25,8 @@ ENV PATH="/venv/bin:$PATH"
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Switch back to the Selenium user for security
-#USER seluser
+# Install SpaCy large model (en_core_web_trf)
+RUN pip install spacy && python -m spacy download en_core_web_trf
 
 # Set a default port
 ENV PORT=8080
