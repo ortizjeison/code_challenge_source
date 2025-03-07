@@ -26,7 +26,16 @@ Ensure `local_run = False` in `env_manager.py`. This is mandatory to run the cod
 
 ### 2. Building and Deploying the Image
 
-2.1 Run `./full_deploy.ps1` to build the Docker image (ensure the Docker daemon is running), then push it to the repository.
+2.1 Set up the following environment variables in `full_deploy.ps1`:
+
+```ps1
+$env:PROJECT_ID="code-challenge-autoscraping"
+$env:REGION="us-central1"
+$env:REPOSITORY="code-challenge-source-repo"
+$env:IMAGE_NAME="code-challenge-image"
+```
+
+2.2 Run `./full_deploy.ps1` to build the Docker image (ensure the Docker daemon is running), then push it to the repository.
 
 ### Alternative Running Options
 
