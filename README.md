@@ -53,8 +53,8 @@ curl http://localhost:8080
 
 ## Feature 1: Named Entity Extraction
 
-For this project, spaCy was chosen due to its speed, efficiency, and cost-effectiveness in extracting persons, organizations, and locations from news articles.
+spaCy is a fast and efficient NLP library designed for tasks like Named Entity Recognition (NER), tokenization, and syntactic analysis. It provides pre-trained models to extract structured information from text, making it ideal for processing large volumes of data.
 
-I'm using en_core_web_md because it balances size and performance, making it suitable for large-scale processing. However, for higher precision, en_core_web_trf (a transformer-based model) could be used, though it requires more computational resources.
+For this project, spaCy was chosen due to its speed, efficiency, and cost-effectiveness for the given task. I'm using `en_core_web_md` because it balances size and performance, making it suitable for large-scale processing. However, for higher precision, `en_core_web_trf` (a transformer-based model) could be used, though it requires more computational resources.
 
 While LLMs provide better contextual understanding, they are slower and more expensive, making spaCy the best choice for this project.
