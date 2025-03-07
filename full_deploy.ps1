@@ -55,6 +55,6 @@ gcloud run deploy $SERVICE_NAME `
     --cpu=1 `
     --timeout=300s `
     --max-instances=5 `
-    --update-secrets=service_account_big_query=service_account_big_query:latest
+    --update-secrets=/secrets/service_account_big_query=service_account_big_query:latest
 
 Write-Host "✅ Deployment to Cloud Run completed successfully!"
