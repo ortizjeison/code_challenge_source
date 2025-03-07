@@ -18,5 +18,5 @@ def extract_entities(text):
 
     return entities
 
-ent = extract_entities("Brazil's legal betting and Elon Musk market surges with 1.7 billion hits on bet.br domain, overtake YouTube and Instagram in online traffic")
-print(ent)
+# ent = extract_entities("Brazil's legal betting and Elon Musk market surges with 1.7 billion hits on bet.br domain, overtake YouTube and Instagram in online traffic")
+# print(ent)

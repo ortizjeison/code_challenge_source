@@ -3,9 +3,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from env_manager import local
 
-
-local = False
 
 def fetch_html():
     """
@@ -19,7 +18,7 @@ def fetch_html():
     # Set up Chrome options
     chrome_options = Options()
 
-    if local:
+    if local():
         pass
     else:
         chrome_options.binary_location = "/opt/google/chrome/chrome" # specify the path to the Chrome binary
