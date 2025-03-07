@@ -24,6 +24,9 @@ Ensure `local_run = False` in `env_manager.py`. This is mandatory to run the cod
 
 1.3 A repository in Artifact Registry (`us-central1-docker.pkg.dev/code-challenge-autoscraping/code-challenge-source-repo`).
 
+1.4 Create a secret in Secrets Manager with the content of the service account (must generate a service account with BigQuery permissions), in this case the secret name is `service_account_big_query`
+
+
 ### 2. Building and Deploying the Image
 
 2.1 Set up the following environment variables in `full_deploy.ps1`:
