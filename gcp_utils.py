@@ -2,7 +2,7 @@ from google.cloud import bigquery
 from google.oauth2 import service_account
 
 
-SERVICE_ACCOUNT_FILE = 'secrets/service_account_big_query'
+SERVICE_ACCOUNT_FILE = '/secrets/service_account_big_query'
 SCOPES = ["https://www.googleapis.com/auth/cloud-platform"]
 
 credentials = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
