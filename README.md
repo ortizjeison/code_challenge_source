@@ -53,6 +53,8 @@ curl http://localhost:8080
 
 ## Feature 1: Named Entity Extraction
 
-For this project, spaCy was chosen due to its speed, efficiency, and cost-effectiveness. It provides structured entity extraction for persons, organizations, and locations, making it ideal for large-scale news processing.
+For this project, spaCy was chosen due to its speed, efficiency, and cost-effectiveness in extracting persons, organizations, and locations from news articles.
 
-While LLMs offer better contextual understanding, they are slower and more expensive. Since budget and scalability are key factors, spaCy is the best fit, balancing performance and precision for this task.
+I'm using en_core_web_md because it balances size and performance, making it suitable for large-scale processing. However, for higher precision, en_core_web_trf (a transformer-based model) could be used, though it requires more computational resources.
+
+While LLMs provide better contextual understanding, they are slower and more expensive, making spaCy the best choice for this project.
